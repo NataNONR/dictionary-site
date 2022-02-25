@@ -1,5 +1,18 @@
-.App-header, 
-.App-footer{
+body {
+  background: #fafaff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffdffa;
+}
+
+.App-header,
+.App-footer {
   margin: 30px auto;
   text-align: center;
+}
+
+.App-footer {
+  font-size: 12px;
 }

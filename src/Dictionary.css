@@ -1,12 +1,21 @@
-.SearchContent {
-  text-align: center;
-  color: #6d91cf;
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
 }
 
-.ResultContent {
-  text-align: left;
+input {
+  color: #505050;
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid #ffdfaa;
+  border-radius: 5px;
 }
 
-a {
-  text-decoration: none;
+.SearchSample {
+  font-size: 10px;
+  color: #98989e;
+  margin-top: 3px;
 }
