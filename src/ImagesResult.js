@@ -14,7 +14,11 @@ export default function ImagesResult(props) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img className="img-fluid" src={eachImage.src.tiny} />
+                  <img
+                    className="img-fluid"
+                    src={eachImage.src.tiny}
+                    alt={eachImage.alt}
+                  />
                 </a>
               </div>
             );
