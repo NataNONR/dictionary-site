@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Result from "./Result";
+import ImagesResult from "./ImagesResult";
+
 import axios from "axios";
 import "./Dictionary.css";
 
@@ -7,16 +9,32 @@ export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [result, setResult] = useState(null);
   let [loaded, setLoaded] = useState(false);
+  let [imagesBank, setImagesBank] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
     setResult(response.data[0]);
+  }
+
+  function handlePexelsResponse(response) {
+    setImagesBank(response.data.photos);
   }
 
   function search() {
     // documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+
+    let pexelsApiKey =
+      "563492ad6f91700001000001e3fe64a4b5f24b09af0a0178eae6e5e9";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
+
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+
+    axios
+      .get(pexelsApiUrl, {
+        headers: headers,
+      })
+      .then(handlePexelsResponse);
   }
 
   function handleSubmit(event) {
@@ -50,6 +68,7 @@ export default function Dictionary(props) {
             Suggested words: forest, cat, advertisement...
           </div>
         </section>
+        <ImagesResult image={imagesBank} />
         <Result resultDisplay={result} />
       </div>
     );
