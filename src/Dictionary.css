@@ -18,9 +18,21 @@ input {
   border: 2px solid #ffdfaa;
   border-radius: 5px;
 }
+input:focus {
+  outline-color: #ffdfaa;
+}
 
 .SearchSample {
   font-size: 12px;
   color: #98989e;
   margin-top: 3px;
+}
+
+.SearchButton {
+  color: #969696;
+  background-color: #ffd3e3;
+  border: 2px solid #ffacca;
+}
+.SearchButton:hover {
+  background: #ffacca;
 }

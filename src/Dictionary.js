@@ -57,12 +57,23 @@ export default function Dictionary(props) {
         <section>
           <h1>What is the word are you looking up?</h1>
           <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              placeholder="Type your word"
-              autoFocus={true}
-              onChange={handleKeywordUpdate}
-            />
+            <div className="row">
+              <div className="col-9">
+                <input
+                  type="search"
+                  placeholder="Type your word"
+                  autoFocus={true}
+                  onChange={handleKeywordUpdate}
+                />
+              </div>
+              <div className="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  className="btn SearchButton"
+                />
+              </div>
+            </div>
           </form>
           <div className="SearchSample">
             Suggested words: forest, cat, advertisement...
