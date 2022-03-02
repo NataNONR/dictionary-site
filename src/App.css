@@ -6,8 +6,9 @@
 }
 
 body {
+  background-color: #f4f4fc;
   background-image: url("bg.svg");
-  background-repeat: repeat-y;
+  background-repeat: round;
   background-size: contain;
 }
 
