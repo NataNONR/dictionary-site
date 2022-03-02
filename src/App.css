@@ -6,7 +6,9 @@
 }
 
 body {
-  background: #fafaff;
+  background-image: url("bg.svg");
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 
 a {
