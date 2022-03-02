@@ -10,8 +10,12 @@ body {
 }
 
 a {
+  margin: 0 4px;
   text-decoration: none;
-  color: #ffdffa;
+  color: #6d91cf;
+}
+a:hover {
+  color: #ffdfaa;
 }
 
 .App-header,
@@ -21,5 +25,5 @@ a {
 }
 
 .App-footer {
-  font-size: 14px;
+  font-size: 16px;
 }

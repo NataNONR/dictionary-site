@@ -9,7 +9,33 @@ function App() {
         <main>
           <Dictionary defaultKeyword="peace" />
         </main>
-        <footer className="App-footer">Coded by Nattha Oroz</footer>
+        <footer className="App-footer">
+          <p>
+            <a
+              href="https://github.com/NataNONR/dictionary-site"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-source code
+            </a>
+            by
+            <a
+              href="https://musing-ride-b4194f.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Nattha Oroz
+            </a>
+            | hosted on
+            <a
+              href="https://youthful-hamilton-8e1129.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
+            </a>
+          </p>
+        </footer>
       </div>
     </div>
   );
