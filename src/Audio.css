@@ -1,0 +1,10 @@
+i {
+  color: #ffacba;
+}
+i:hover {
+  color: #ffdfaa;
+}
+
+.Audio {
+  display: inline-block;
+}
