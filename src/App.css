@@ -5,6 +5,21 @@
   font-size: 18px;
 }
 
+.App-logo {
+  border-radius: 35px;
+  max-width: 70px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(255, 223, 170, 0.3) 0px 0px 20px;
+}
+
+.Main-content {
+  font-weight: 500;
+  font-size: 50px;
+  margin-top: 70px;
+}
+
 body {
   background-color: #f4f4fc;
   background-image: url("bg.svg");
@@ -24,9 +39,9 @@ a:hover {
 .App-header,
 .App-footer {
   margin: 30px auto;
-  text-align: center;
 }
 
 .App-footer {
+  text-align: center;
   font-size: 16px;
 }
